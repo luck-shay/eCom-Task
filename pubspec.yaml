@@ -24,5 +24,10 @@ dev_dependencies:
 flutter:
   uses-material-design: true
 
-  # assets:
-  #   - assets/images/
+  assets:
+    - assets/images/black-boots.webp
+    - assets/images/blue-tshirt.webp
+    - assets/images/red-shirt.avif
+    - assets/images/white-shoes.webp
+    - assets/images/blue-jeans.webp
+    - assets/images/silver-watch.webp

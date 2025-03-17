@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
       ],
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
-        title: 'Flutter eCommerce',
+        title: 'eCommerce Task',
         theme: ThemeData(
           primarySwatch: Colors.blue,
           fontFamily: 'Lato',

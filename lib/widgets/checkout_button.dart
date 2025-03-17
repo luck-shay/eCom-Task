@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
+// import 'package:provider/provider.dart';
 import '../providers/cart_provider.dart';
 
 class CheckoutButton extends StatelessWidget {
@@ -13,18 +13,23 @@ class CheckoutButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return TextButton(
-      onPressed: () {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(
-            content: Text('Checkout successful!'),
-            duration: Duration(seconds: 2),
-          ),
-        );
-        cart.clear();
-      },
+      onPressed: cart.totalQuantity <= 0
+          ? null
+          : () {
+              ScaffoldMessenger.of(context).showSnackBar(
+                SnackBar(
+                  content: Text('Checkout successful!'),
+                  duration: Duration(seconds: 2),
+                ),
+              );
+              cart.clear();
+            },
       child: Text(
         'CHECKOUT',
-        style: TextStyle(color: Theme.of(context).primaryColor),
+        style: TextStyle(
+            color: cart.totalQuantity <= 0
+                ? Colors.grey
+                : Theme.of(context).primaryColor),
       ),
     );
   }

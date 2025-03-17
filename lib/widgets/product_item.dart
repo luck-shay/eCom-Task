@@ -17,13 +17,20 @@ class ProductItem extends StatelessWidget {
       borderRadius: BorderRadius.circular(10),
       child: GridTile(
         child: GestureDetector(
-          onTap: () {
-            // Add onTap functionality here
-          },
-          child: Image.network(
-            imageUrl,
-            fit: BoxFit.cover,
-          ),
+          onTap: () {},
+          child: imageUrl.startsWith('http')
+              ? Image.network(
+                  imageUrl,
+                  fit: BoxFit.cover,
+                  width: double.infinity,
+                  height: double.infinity,
+                )
+              : Image.asset(
+                  imageUrl,
+                  fit: BoxFit.cover,
+                  width: double.infinity,
+                  height: double.infinity,
+                ),
         ),
         footer: GridTileBar(
           backgroundColor: Colors.black87,
@@ -40,9 +47,25 @@ class ProductItem extends StatelessWidget {
               );
             },
           ),
-          title: Text(
-            title,
-            textAlign: TextAlign.center,
+          title: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Expanded(
+                child: Text(
+                  title,
+                  textAlign: TextAlign.center,
+                  overflow: TextOverflow.ellipsis,
+                ),
+              ),
+              SizedBox(width: 10),
+              Text(
+                '₹${price.toStringAsFixed(2)}',
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  color: Theme.of(context).colorScheme.secondary,
+                ),
+              ),
+            ],
           ),
         ),
       ),
