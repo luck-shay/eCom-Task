@@ -7,7 +7,6 @@ A Flutter-based e-commerce application demonstrating essential functionalities l
 ## Features
 
 ✅ **Product Listing** – Displays a list of products with images, names, and prices.  
-✅ **Product Details** – Shows detailed product information.  
 ✅ **Cart Management** – Users can add/remove items from the cart.  
 ✅ **Checkout Flow** – Basic order confirmation functionality.  
 ✅ **Responsive UI** – Works seamlessly on both Android & iOS.  
