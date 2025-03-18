@@ -6,10 +6,11 @@ A Flutter-based e-commerce application demonstrating essential functionalities l
 
 ## Features
 
-✅ **Product Listing** – Displays a list of products with images, names, and prices.
-✅ **Cart Management** – Users can add/remove items from the cart.
-✅ **Checkout Flow** – Basic order confirmation functionality.
-✅ **Responsive UI** – Works seamlessly on both Android & iOS.
+✅ **Product Listing** – Displays a list of products with images, names, and prices.  
+✅ **Product Details** – Shows detailed product information.  
+✅ **Cart Management** – Users can add/remove items from the cart.  
+✅ **Checkout Flow** – Basic order confirmation functionality.  
+✅ **Responsive UI** – Works seamlessly on both Android & iOS.  
 ✅ **State Management** – Uses **Provider** for efficient state handling.  
 
 ---
@@ -36,10 +37,10 @@ flutter run
 
 ## Technologies Used
 
-- **Flutter** – UI framework
-- **Dart** – Programming language
+- **Flutter** – UI framework  
+- **Dart** – Programming language  
 - **Provider** – State management
-
+  
 ---
 
 ## Project Structure
@@ -57,8 +58,8 @@ lib/
 
 ## Future Improvements
 
-🚀 Implement authentication (Login/Signup)
-🚀 Enhance UI with animations
+🚀 Implement authentication (Login/Signup)  
+🚀 Enhance UI with animations  
 🚀 Add payment gateway integration  
 
 ---
@@ -71,4 +72,4 @@ Pull requests are welcome! If you have suggestions, feel free to open an issue.
 
 ## Contact
 
-For any queries, feel free to reach out at **goellakshay3@gmail.com**
+For any queries, feel free to reach out at *goellakshay3@gmail.com*
